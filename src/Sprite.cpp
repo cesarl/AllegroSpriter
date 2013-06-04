@@ -27,7 +27,7 @@ void					Sprite::initialize(int x,
   this->y_ = y;
   this->w_ = w;
   this->h_ = h;
-  this->rotation_ = rotation;
+  this->rotation_ = rotation * ALLEGRO_PI / 180;
   this->color_ = color;
   this->bitmap_ = bitmap;
 }
@@ -48,7 +48,7 @@ void					Sprite::setColor(ALLEGRO_COLOR const & color)
 
 void					Sprite::setRotation(float angle)
 {
-  this->rotation_ = angle;
+  this->rotation_ = angle * ALLEGRO_PI / 180;
 }
 
 void					Sprite::setWidth(int width)

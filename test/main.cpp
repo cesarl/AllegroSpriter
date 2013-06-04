@@ -17,7 +17,7 @@ int					main()
     {
       test.draw();
       test.update(al_get_time());
-      al_rest(1.0f / 60.0f);
+      al_rest(1.0f / 10.0f);
       al_flip_display();
       al_clear_to_color(al_map_rgb(0,0,0));
       ++i;
